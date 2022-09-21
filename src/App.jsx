@@ -8,11 +8,6 @@ const App = () => {
     return (
         <>
             <Header />
-            <Nav />
-            <Footer />
-
-
-
         </>
     )
 }

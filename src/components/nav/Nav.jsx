@@ -1,21 +1,22 @@
 import React from 'react'
 import '../../style.css'
+import Logo from '../../assets/logo/logo-full.png'
 
 const Nav = () => {
     return (
         <nav className="navbar">
             <div className="navbar__logo">
-                <img src="" alt="logo Aubrac Corner"/>
-                <span className="subtitle">
+                <img src={Logo} alt="logo Aubrac Corner"/>
+                <h3 className="subtitle">
                     "de la bière, de la viande et des copains"
-                </span>
+                </h3>
             </div>
 
             <div className="navbar__menu">
                 <ul className="navbar__menu__links">
-                    <li>Notre carte</li>
-                    <li>Horaires</li>
-                    <li>Contact</li>
+                    <li><a href="">Notre carte</a></li>
+                    <li><a href="">Horaires</a></li>
+                    <li><a href="">Contact</a></li>
                 </ul>
             </div>
         </nav>

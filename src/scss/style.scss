@@ -13,3 +13,126 @@
   scroll-behavior: smooth;
 }
 
+body{
+  background-color: $text-color-primary;
+  font-family: "Eagle Light, sans serif";
+  font-weight: 700;
+}
+
+p, h3, h2, h1, li{
+  color: $text-color-primary;
+}
+
+.header{
+  height: 100vh;
+  background-color: $background-primary;
+  position: relative;
+
+  &__title{
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  &__choice{
+    display: grid;
+    grid-template-columns: 1fr 1rem 1fr;
+    margin-top: 2rem;
+    align-items: start;
+    justify-items: center;
+
+    &__item{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      &:hover{
+        .choice__picto{
+          animation: shaking 0.3s infinite;
+        }
+      }
+    }
+
+  }
+
+  .choice__title{
+    text-align: center;
+    color: $text-color-primary;
+
+    h4{
+      font-weight: bold;
+    }
+  }
+
+  .choice__picto{
+    margin-top: 2rem;
+    transition: $transition;
+
+
+    img{
+      object-fit: contain;
+      width: 80%;
+    }
+  }
+
+
+  &__footer{
+    overflow: hidden;
+    position: absolute;
+    bottom: -1%;
+    width: 100%;
+
+    img{
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+
+  .separator {
+    border-left: 4px solid $text-color-primary;
+    height: 80%;
+    align-self: center;
+  }
+}
+
+@keyframes shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(1deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.navbar{
+  display: grid;
+  grid-template-columns: 45% 40%;
+  gap: 15%;
+  padding: 1rem;
+
+  &__logo{
+    text-align: center;
+
+    img{
+      width: 90%;
+      object-fit: contain;
+    }
+  }
+
+  &__menu{
+    &__links{
+      display: flex;
+      justify-content: space-evenly;
+      place-items: center;
+      height: 100%;
+
+      a{
+        color: $text-color-primary;
+      }
+    }
+  }
+}
+
+.subtitle{
+  font-family: "Dharma Gothic";
+}
+
