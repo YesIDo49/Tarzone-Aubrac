@@ -20,13 +20,14 @@ body{
 }
 
 p, h3, h2, h1, li{
-  color: $text-color-primary;
 }
 
 .header{
   height: 100vh;
   background-color: $background-primary;
   position: relative;
+  color: $text-color-primary;
+
 
   &__title{
     text-align: center;
@@ -136,3 +137,83 @@ p, h3, h2, h1, li{
   font-family: "Dharma Gothic";
 }
 
+.menu{
+  color: $text-color-tertiary !important;
+  position: relative;
+  width: 100%;
+  overflow-x: clip;
+  &__title{
+    font-size: 3rem;
+    text-align: center;
+    color: $text-color-tertiary;
+    margin: 2rem 0;
+  }
+
+  &__list{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: auto;
+    margin: auto 10%;
+    z-index: 1;
+
+    &__title{
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+      font-weight: 800;
+
+      &.--price{
+        text-align: center;
+      }
+    }
+
+    &__item{
+      padding: 0.5rem 0;
+      font-size: 1.5rem;
+
+      &.--price{
+        text-align: center;
+      }
+    }
+
+    &__btn{
+      position: absolute;
+      right: -5%;
+      top: 60%;
+      padding: 1rem 1.5rem;
+      transform: rotate(-90deg);
+      font-size: 1.2rem;
+      color: $text-color-tertiary;
+      background-color: $background-primary;
+      border: 3px solid $background-primary;
+      transition: $transition;
+
+
+      &:hover{
+        background-color: transparent;
+        color: $background-primary;
+      }
+    }
+  }
+
+  &__picto{
+    position: absolute;
+    right: -5%;
+    top: 85%;
+    transform: rotate(-20deg);
+    width: 15rem;
+
+    img{
+      width: 100%;
+      object-fit: contain;
+    }
+
+    &.--left-picto{
+      right: initial;
+      left: -6%;
+      top: 70%;
+      transform: rotate(70deg);
+
+
+    }
+  }
+}
