@@ -17,7 +17,7 @@ body {
 
 .header {
   height: 100vh;
-  background-color: #FFA476;
+  background-color: #F7793B;
   position: relative;
   color: #252525;
 }
@@ -157,13 +157,13 @@ body {
   transform: rotate(-90deg);
   font-size: 1.2rem;
   color: #fff;
-  background-color: #FFA476;
-  border: 3px solid #FFA476;
+  background-color: #F7793B;
+  border: 3px solid #F7793B;
   transition: all 0.4s ease;
 }
 .menu__list__btn:hover {
   background-color: transparent;
-  color: #FFA476;
+  color: #F7793B;
 }
 .menu__picto {
   position: absolute;
