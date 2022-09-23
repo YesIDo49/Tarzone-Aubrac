@@ -117,9 +117,9 @@ body {
 
 .menu {
   color: #fff !important;
-  position: relative;
   width: 100%;
   overflow-x: clip;
+  height: 100%;
 }
 .menu__title {
   font-size: 3rem;
@@ -127,11 +127,23 @@ body {
   color: #fff;
   margin: 2rem 0;
 }
+.menu__container {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu #menu-bar {
+  grid-template-columns: 1fr 2.5fr;
+  column-gap: 10rem;
+}
 .menu__list {
   display: grid;
   grid-template-columns: 1fr 0.5fr;
   grid-template-rows: auto;
   margin: auto 10%;
+  transition: all 0.4s ease;
   z-index: 1;
 }
 .menu__list__title {
@@ -149,6 +161,10 @@ body {
 .menu__list__item.--price {
   text-align: center;
 }
+.menu__list__item.--list-point {
+  list-style: inside;
+  padding-left: 1rem;
+}
 .menu__list__btn {
   position: absolute;
   right: -5%;
@@ -160,6 +176,8 @@ body {
   background-color: #F7793B;
   border: 3px solid #F7793B;
   transition: all 0.4s ease;
+  cursor: pointer;
+  z-index: 1;
 }
 .menu__list__btn:hover {
   background-color: transparent;
@@ -168,9 +186,9 @@ body {
 .menu__picto {
   position: absolute;
   right: -5%;
-  top: 85%;
+  top: 70%;
   transform: rotate(-20deg);
-  width: 15rem;
+  width: 20rem;
 }
 .menu__picto img {
   width: 100%;
@@ -181,6 +199,43 @@ body {
   left: -6%;
   top: 70%;
   transform: rotate(70deg);
+}
+.menu__picto.--drink {
+  width: 30rem;
+  right: -12%;
+  top: 8%;
+  transform: rotate(-92deg);
+}
+.menu__picto.--left-drink {
+  width: 25rem;
+  right: initial;
+  left: -6%;
+  top: 50%;
+  transform: rotate(0deg);
+}
+.menu .switch__btn {
+  border: 3px solid #F7793B;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  width: fit-content;
+  margin: 5rem auto;
+}
+.menu .switch__btn__link {
+  background-color: #F7793B;
+  border: 3px solid #F7793B;
+  outline: 3px solid #F7793B;
+  transform: translate(-15px, -15px);
+  text-align: center;
+  transition: all 0.4s ease;
+  padding: 1rem 0;
+}
+.menu .switch__btn__link a {
+  font-size: 1.2rem;
+  color: #252525;
+  padding: 1.5rem;
+}
+.menu .switch__btn:hover .switch__btn__link {
+  transform: translate(0, 0);
 }
 
 /*# sourceMappingURL=style.css.map */

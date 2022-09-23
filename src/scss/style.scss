@@ -139,9 +139,9 @@ p, h3, h2, h1, li{
 
 .menu{
   color: $text-color-tertiary !important;
-  position: relative;
   width: 100%;
   overflow-x: clip;
+  height: 100%;
   &__title{
     font-size: 3rem;
     text-align: center;
@@ -149,11 +149,26 @@ p, h3, h2, h1, li{
     margin: 2rem 0;
   }
 
+  &__container{
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #menu-bar{
+    grid-template-columns: 1fr 2.5fr;
+    column-gap: 10rem;
+
+  }
+
   &__list{
     display: grid;
     grid-template-columns: 1fr 0.5fr;
     grid-template-rows: auto;
     margin: auto 10%;
+    transition: $transition;
     z-index: 1;
 
     &__title{
@@ -173,6 +188,11 @@ p, h3, h2, h1, li{
       &.--price{
         text-align: center;
       }
+
+      &.--list-point{
+        list-style: inside;
+        padding-left: 1rem;
+      }
     }
 
     &__btn{
@@ -186,6 +206,8 @@ p, h3, h2, h1, li{
       background-color: $background-primary;
       border: 3px solid $background-primary;
       transition: $transition;
+      cursor: pointer;
+      z-index: 1;
 
 
       &:hover{
@@ -193,14 +215,16 @@ p, h3, h2, h1, li{
         color: $background-primary;
       }
     }
+
+
   }
 
   &__picto{
     position: absolute;
     right: -5%;
-    top: 85%;
+    top: 70%;
     transform: rotate(-20deg);
-    width: 15rem;
+    width: 20rem;
 
     img{
       width: 100%;
@@ -212,8 +236,55 @@ p, h3, h2, h1, li{
       left: -6%;
       top: 70%;
       transform: rotate(70deg);
+    }
+
+    &.--drink{
+      width: 30rem;
+      right: -12%;
+      top: 8%;
+      transform: rotate(-92deg);
+    }
+    &.--left-drink{
+      width: 25rem;
+      right: initial;
+      left: -6%;
+      top: 50%;
+      transform: rotate(0deg);
+    }
+  }
+
+  .switch__btn{
+
+    border: 3px solid $background-primary;
+    transition: $transition;
+    cursor: pointer;
+    width: fit-content;
+    margin: 5rem auto;
+
+    &__link{
+
+      background-color: $background-primary;
+      border: 3px solid $background-primary;
+      outline: 3px solid $background-primary;
+      transform: translate(-15px, -15px);
+      text-align: center;
+      transition: $transition;
+      padding: 1rem 0;
 
 
+      a{
+        font-size: 1.2rem;
+        color: $text-color-primary;
+        padding: 1.5rem;
+      }
+
+    }
+
+    &:hover {
+      .switch__btn__link{
+        transform: translate(0, 0);
+
+      }
     }
   }
 }
