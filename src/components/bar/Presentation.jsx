@@ -3,9 +3,9 @@ import '../../style.css'
 import BarFriends from "../../assets/images/bar-friends.png"
 const Presentation = () => {
     return (
-        <div className='Presentation'>
+        <div id="Bar" className='Presentation'>
            <div className='Presentation__title'>
-                <h2 className='flicker-long'>Bar Zone</h2>
+                <h2>Bar <span className="flicker-long">Zone</span></h2>
            </div>
            <div className='Presentation__flex'>
                 <div className='Presentation__image'>

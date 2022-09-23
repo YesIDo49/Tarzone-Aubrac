@@ -8,7 +8,7 @@ const MenuBar = () => {
 
         <section className="menu">
             <div className="menu__title">
-                <h2>Notre Carte</h2>
+                <h2><span className="flicker-fast">Notre</span> <span className="flicker-long"> Carte</span> </h2>
             </div>
 
             <div className="menu__container">

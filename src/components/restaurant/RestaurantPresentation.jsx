@@ -5,7 +5,7 @@ const RestaurantPresentation = () => {
     return (
         <div id="Restaurant" className='RestaurantPresentation'>
             <div className='RestaurantPresentation__title'>
-                <h2 className='flicker-long'>Restaurant Zone</h2>
+                <h2><span className="flicker-long">Restaurant</span> Zone</h2>
             </div>
             <div className='RestaurantPresentation__flex'>
                 <div className='RestaurantPresentation__image'>

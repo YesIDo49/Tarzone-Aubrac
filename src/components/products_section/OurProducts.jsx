@@ -4,7 +4,7 @@ import '../../style.css'
 const OurProducts = () => {
     return (
         <section className="OurProduct products-section">
-            <h2 className='section-title'>Nos Produits</h2>
+            <h2 className='section-title flicker-long'>Nos Produits</h2>
             <div className='OurProduct__farmers-img'>
                 <div className='OurProduct__position'>
                     <div className='OurProduct__floating-block'>

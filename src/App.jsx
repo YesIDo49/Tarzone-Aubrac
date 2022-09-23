@@ -15,11 +15,11 @@ const App = () => {
         <>
             <Header />
             <OurProducts></OurProducts>
-            <Restaurant/>
             <RestaurantContent/>
             <MenuRestaurant/>
             <BarContent/>
             <MenuBar/>
+            <Footer/>
         </>
     )
 }

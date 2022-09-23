@@ -6,7 +6,7 @@ import Facebook from "../../assets/images/Vector (1).png"
 
 const Footer = () => {
     return (
-        <footer>
+        <footer id="Contact">
             <div class="footer_contact">
         <h3>Contact</h3>
       

@@ -29,6 +29,10 @@ h1{
   font-size: 38px;
   font-weight: 300;
   letter-spacing: 2px;
+
+  &.--navbar__subtitle{
+    text-shadow: 1px 0px 4px $text-color-tertiary, 2px 0px 4px $text-color-tertiary, 3px 0px 4px $text-color-tertiary, 2px 0px 3px $text-color-primary, 2px 3px 15px $text-color-primary, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px $text-color-primary,40px 0vw 200px $text-color-primary;
+  }
 }
 .header{
   height: 100vh;
@@ -111,7 +115,7 @@ h1{
 .OurProduct{
   padding: 10% 0;
   .section-title{
-    color: white;
+    color: $color-primary;
     font-family: Poppins;
     text-align: center;
     font-size: 3rem;
@@ -224,6 +228,8 @@ h1{
     font-size: 3rem;
     h2{
       color: $background-primary;
+      text-shadow: 1px 0px 4px $text-color-tertiary, 2px 0px 4px $text-color-tertiary, 3px 0px 4px $text-color-tertiary, 2px 0px 3px $text-color-primary, 2px 3px 15px $text-color-primary, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px $text-color-primary,40px 0vw 200px $text-color-primary;
+
     }
   }
   &__image{
@@ -316,6 +322,11 @@ h1{
     text-align: center;
     color: $text-color-tertiary;
     margin: 2rem 0;
+
+    h2{
+      color: $color-primary;
+      text-shadow: 1px 0px 4px $text-color-tertiary, 2px 0px 4px $text-color-tertiary, 3px 0px 4px $text-color-tertiary, 2px 0px 3px $text-color-primary, 2px 3px 15px $text-color-primary, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px $text-color-primary,40px 0vw 200px $text-color-primary;
+    }
   }
 
   &__container{
@@ -495,7 +506,7 @@ h1{
     margin-bottom:5rem;
   }
   &__hero{
-    background: url('./assets/images/FermeVialars.jpg') 100vw 100vh;
+    //background: url('./assets/images/FermeVialars.jpg') 100vw 100vh;
     width: 100vw;
     height: 100vh;
     padding-top:1rem;
@@ -690,5 +701,4 @@ footer{
   .footer_contact_barre_ouverture{
     width: 100%;
   }
-}
 }

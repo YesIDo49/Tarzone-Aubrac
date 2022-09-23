@@ -9,15 +9,19 @@ const Nav = () => {
                 {/* <img src={Logo} alt="logo Aubrac Corner"/> */}
                 <h1 navbar__h1>AUBRAC CORNER</h1>
                 <h3 className="subtitle --navbar__subtitle">
-                    "de la bière, de la viande et des copains"
+                    "de
+                    <span className="flicker-long">la bière</span>,
+                    <span className="flicker-fast">la viande</span>
+                    <span className="flicker-long">et des</span>
+                    copains"
                 </h3>
             </div>
 
             <div className="navbar__menu">
                 <ul className="navbar__menu__links">
-                    <li><a href="">Notre carte</a></li>
-                    <li><a href="">Horaires</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#Restaurant">Restaurant</a></li>
+                    <li><a href="#Bar">Bar</a></li>
+                    <li><a href="#Contact">Contact</a></li>
                 </ul>
             </div>
         </nav>

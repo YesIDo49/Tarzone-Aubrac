@@ -16,7 +16,7 @@ const Header = () => {
             </div>
 
             <div className="header__choice">
-                <a href="" className="header__choice__item">
+                <a href="#Bar" className="header__choice__item">
                     <div className="choice__title">
                         <span className="subtitle">
                             time to
@@ -28,7 +28,7 @@ const Header = () => {
                     </div>
                 </a>
                 <div className="separator"></div>
-                <a href="" className="header__choice__item">
+                <a href="#Restaurant" className="header__choice__item">
                     <div className="choice__title">
                         <span className="subtitle">
                             time to
