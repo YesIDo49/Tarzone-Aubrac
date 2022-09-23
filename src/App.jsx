@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from "./components/header/Header";
-import Nav from "./components/nav/Nav";
+import BarContent from "./components/bar/BarContent";
+import RestaurantContent from "./components/restaurant/RestaurantContent";
 import Footer from "./components/footer/Footer";
 import MenuRestaurant from "./components/menuRestaurant/MenuRestaurant";
 import MenuBar from "./components/menuBar/MenuBar";
@@ -15,7 +16,9 @@ const App = () => {
             <Header />
             <OurProducts></OurProducts>
             <Restaurant/>
+            <RestaurantContent/>
             <MenuRestaurant/>
+            <BarContent/>
             <MenuBar/>
         </>
     )

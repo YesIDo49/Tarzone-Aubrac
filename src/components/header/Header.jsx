@@ -12,7 +12,7 @@ const Header = () => {
             <Nav/>
 
             <div className="header__title">
-                <h2 className="subtitle">Choisis ta vibe</h2>
+                <h2 className="header__subtitle">Choisis ta vibe !</h2>
             </div>
 
             <div className="header__choice">
