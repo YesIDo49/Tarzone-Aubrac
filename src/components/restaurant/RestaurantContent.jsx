@@ -7,6 +7,7 @@ import Specialities from "../restaurant/Specialities";
 const RestaurantContent = () => {
     return (
         <>
+            
             <RestaurantPresentation/>
             <Share/>
             <Specialities/>

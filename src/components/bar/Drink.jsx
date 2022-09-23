@@ -3,7 +3,7 @@ import '../../style.css'
 import DrinkBeer from "../../assets/images/drink-beer.png"
 const Drink = () => {
     return (
-        <div className='Drink'>
+        <div className='Drink Drink__flex'>
             <div className='Drink__image'>
                 <img src={DrinkBeer} alt="Bar with friends"/>
             </div>
