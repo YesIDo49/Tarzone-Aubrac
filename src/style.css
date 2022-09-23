@@ -120,10 +120,14 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 260px;
-    font-size: 3rem; }
+    height: auto;
+    margin-bottom: 150px;
+    font-size: 5rem;
+    font-style: italic;
+    font-family: dharma-gothic-e; }
     .Presentation__title h2, .Games__title h2, .Drink__title h2, .RestaurantPresentation__title h2, .Share__title h2, .Specialities__title h2 {
-      color: #F4BB40; }
+      -webkit-text-stroke: 1px #F4BB40;
+      color: #252525; }
   .Presentation__image, .Games__image, .Drink__image, .RestaurantPresentation__image, .Share__image, .Specialities__image {
     width: 50%;
     position: relative; }
@@ -155,33 +159,33 @@ h1 {
       font-weight: 100;
       color: #F4BB40; }
 
-.Games, .Share {
+.Games, .Specialities, .RestaurantPresentation {
   background-color: #F4BB40; }
-  .Games__content, .Share__content {
+  .Games__content, .Specialities__content, .RestaurantPresentation__content {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative; }
-  .Games__text, .Share__text {
+  .Games__text, .Specialities__text, .RestaurantPresentation__text {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%; }
-    .Games__text h2, .Share__text h2 {
+    .Games__text h2, .Specialities__text h2, .RestaurantPresentation__text h2 {
       color: #252525;
       font-size: 4rem;
       line-height: 5rem; }
-    .Games__text p, .Share__text p {
+    .Games__text p, .Specialities__text p, .RestaurantPresentation__text p {
       font-family: dharma-gothic-e;
       font-size: 38px;
       font-weight: 100;
       color: #252525; }
-  .Games__image, .Share__image {
+  .Games__image, .Specialities__image, .RestaurantPresentation__image {
     width: 50%;
     position: relative;
     display: flex;
     justify-content: center; }
-    .Games__image::after, .Share__image::after {
+    .Games__image::after, .Specialities__image::after, .RestaurantPresentation__image::after {
       content: "";
       position: absolute;
       top: 4rem;
@@ -191,20 +195,8 @@ h1 {
       height: 620px;
       z-index: 0; }
 
-.flicker-long {
-  transition: all 0.4s ease;
-  text-shadow: 1px 0px 4px white, 2px 0px 4px white, 3px 0px 4px white, 2px 0px 3px #252525, 2px 3px 15px #252525, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #252525, 40px 0vw 200px #252525;
-  animation: flicker 4s linear infinite; }
-
-.flicker-fast {
-  transition: all 0.4s ease;
-  text-shadow: 1px 0px 4px white, 2px 0px 4px white, 3px 0px 4px white, 2px 0px 3px #252525, 2px 3px 15px #252525, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #252525, 40px 0vw 200px #252525;
-  animation: flicker 1s linear infinite; }
-
-@keyframes flicker {
-  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
-    opacity: .99; }
-  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
-    opacity: 0.4; } }
+.RestaurantPresentation__title h2 {
+  -webkit-text-stroke: 1px #252525;
+  color: #F4BB40; }
 
 /*# sourceMappingURL=style.css.map */
