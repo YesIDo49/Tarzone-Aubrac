@@ -6,8 +6,9 @@ const Nav = () => {
     return (
         <nav className="navbar">
             <div className="navbar__logo">
-                <img src={Logo} alt="logo Aubrac Corner"/>
-                <h3 className="subtitle">
+                {/* <img src={Logo} alt="logo Aubrac Corner"/> */}
+                <h1 navbar__h1>AUBRAC CORNER</h1>
+                <h3 className="subtitle --navbar__subtitle">
                     "de la bière, de la viande et des copains"
                 </h3>
             </div>

@@ -1,6 +1,4 @@
-
 @import "./utils/variables";
-
 
 *{
   margin: 0;
@@ -15,14 +13,24 @@
 
 body{
   background-color: $text-color-primary;
-  font-family: "Eagle Light, sans serif";
+  font-family: poppins;
   font-weight: 700;
 }
 
 p, h3, h2, h1, li{
   color: $text-color-primary;
 }
-
+h1{
+  font-family: 'poppins';
+  font-weight: 1200;
+  font-size: 70px;
+}
+.subtitle{
+  font-family: dharma-gothic-c;
+  font-size: 38px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
 .header{
   height: 100vh;
   background-color: $background-primary;
@@ -32,7 +40,13 @@ p, h3, h2, h1, li{
     text-align: center;
     margin-top: 2rem;
   }
-
+  &__subtitle{
+    font-family: 'poppins';
+    font-weight: 1200;
+    font-size: 3rem;
+    -webkit-text-stroke: 1px $text-color-primary;
+    color: $background-primary;
+  }
   &__choice{
     display: grid;
     grid-template-columns: 1fr 1rem 1fr;
@@ -70,7 +84,7 @@ p, h3, h2, h1, li{
 
     img{
       object-fit: contain;
-      width: 80%;
+      width: 100%;
     }
   }
 
@@ -86,8 +100,6 @@ p, h3, h2, h1, li{
       object-fit: cover;
     }
   }
-
-
   .separator {
     border-left: 4px solid $text-color-primary;
     height: 80%;
@@ -102,22 +114,23 @@ p, h3, h2, h1, li{
   75% { transform: rotate(-10deg); }
   100% { transform: rotate(0deg); }
 }
-
 .navbar{
   display: grid;
   grid-template-columns: 45% 40%;
   gap: 15%;
   padding: 1rem;
-
+  .--navbar__subtitle{
+    font-size: 68px;
+    letter-spacing: 5px;
+    line-height: 20px;
+  }
   &__logo{
     text-align: center;
-
     img{
       width: 90%;
       object-fit: contain;
     }
   }
-
   &__menu{
     &__links{
       display: flex;
@@ -131,8 +144,89 @@ p, h3, h2, h1, li{
     }
   }
 }
-
-.subtitle{
-  font-family: "Dharma Gothic";
+.Presentation, .Games, .Drink, .RestaurantPresentation, .Share, .Specialities{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12rem 6rem;
+  &__image{
+    width: 50%;
+    position: relative;
+    &::after{
+      content: "";
+      position: absolute;
+      top:5rem;
+      right: 13rem;
+      background-color: $background-primary;
+      width: 500px;
+      height: 620px;
+      z-index: -1;
+    }
+    img{
+      width: 500px;
+      position: relative;
+      z-index: 2;
+    }
+  }
+  &__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    h2{
+      color: $background-primary;
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+    p{
+      font-family: dharma-gothic-e;
+      font-size: 38px;
+      font-weight: 100;
+      color: $background-primary;
+    }
+  }
 }
+.Games, .Share{
+  background-color: $background-primary;
+  &__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  &__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    h2{
+      color: $text-color-primary;
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+    p{
+      font-family: dharma-gothic-e;
+      font-size: 38px;
+      font-weight: 100;
+      color: $text-color-primary;
+    }
+  }
+  &__image{
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    &::after{
+      content: "";
+      position: absolute;
+      top:4rem;
+      right: 4rem;
+      border: 4px solid $text-color-primary !important;
+      width: 500px;
+      height: 620px;
+      z-index: 0;
+    }
+  }
+}
+
 
