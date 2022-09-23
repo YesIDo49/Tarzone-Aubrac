@@ -96,6 +96,69 @@ p, h3, h2, h1, li{
   }
 }
 
+.OurProduct{
+  padding: 10% 0;
+  .section-title{
+    color: white;
+    font-family: Poppins;
+    text-align: center;
+    font-size: 3rem;
+    padding: 5%;
+  }
+  &__farmers-img{
+    height: 820px;
+    width: auto;
+    position: relative;
+    &::before{
+      content: "";
+      background-image: url(/src/assets/images/farmers.jpg);
+      background-position: center;
+      background-repeat:no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.65;
+    }
+  }
+  &__position{
+    position: absolute;
+    top: 6rem;
+    left: 6rem;
+  }
+  &__floating-block{
+      background-color: #F7793B;
+      height: 830px;
+      width: 630px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+      &::after{
+        content: "";
+        border: 5px solid #F7793B;
+        position: absolute;
+        width: 630px;
+        height: 830px;
+        top: 3rem;
+        right: -3rem;
+        z-index: 10;
+      }
+      p{
+        text-align: center;
+        font-size: 2rem;
+        padding: 10%;
+        font-family: Poppins;
+        color: white;
+        .aubrac-name{
+          color: #252525;
+        }
+      }
+    }
+}
+
 @keyframes shaking {
   0% { transform: rotate(0deg); }
   25% { transform: rotate(1deg); }
