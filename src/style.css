@@ -258,5 +258,107 @@ body {
     opacity: 0.4;
   }
 }
+/***Romain : Restaurant***/
+.produits {
+  margin-top: 5rem;
+}
+.produits__title {
+  color: white;
+  text-align: center;
+  font-family: "eagle";
+  font-size: 96px;
+  margin-bottom: 5rem;
+}
+.produits__hero {
+  background: url("./assets/images/FermeVialars.jpg") 100vw 100vh;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 1rem;
+  z-index: 1;
+}
+.produits__hero__text {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
+  margin-top: 10rem;
+  width: 30%;
+  height: 95vh;
+  background-color: #F7793B;
+  margin-left: 10rem;
+  z-index: 3;
+}
+.produits__hero__text__infos {
+  color: white;
+  font-family: "eagle";
+  font-size: 40px;
+  margin-top: 20rem;
+  margin-bottom: 20rem;
+  z-index: 3;
+}
+.produits__hero__text__infos p {
+  color: #252525;
+}
+.produits__hero__text::after {
+  content: "";
+  position: absolute;
+  height: 95%;
+  width: 30%;
+  top: 170%;
+  left: 20rem;
+  border: solid 4px #F7793B;
+  z-index: 2;
+}
+
+.restaurant {
+  margin-top: 10rem;
+}
+.restaurant__intro {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 5rem;
+}
+.restaurant__intro img {
+  box-shadow: -1rem 2rem 0 #F7793B;
+}
+.restaurant__intro__text {
+  color: #F7793B;
+  font-size: 64px;
+  font-family: "eagle";
+  text-align: center;
+}
+.restaurant__seconde {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #F7793B;
+}
+.restaurant__seconde__text {
+  font-size: 64px;
+  font-family: "eagle";
+  text-align: center;
+  margin-left: 5rem;
+}
+.restaurant__seconde__img {
+  margin-right: 5rem;
+}
+.restaurant__troisieme {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 5rem;
+  margin-top: 5rem;
+}
+.restaurant__troisieme img {
+  box-shadow: 1rem 2rem 0 #F7793B;
+}
+.restaurant__troisieme__text {
+  color: #F7793B;
+  font-size: 64px;
+  font-family: "eagle";
+  text-align: center;
+  margin-left: 5rem;
+}
 
 /*# sourceMappingURL=style.css.map */

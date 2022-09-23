@@ -312,3 +312,113 @@ p, h3, h2, h1, li{
     opacity: 0.4;
   }
 }
+
+
+/***Romain : Restaurant***/
+
+.produits{
+  margin-top:5rem;
+  &__title{
+    color:white;
+    text-align: center;
+    font-family: "eagle";
+    font-size:96px;
+    margin-bottom:5rem;
+  }
+  &__hero{
+    background: url('./assets/images/FermeVialars.jpg') 100vw 100vh;
+    width: 100vw;
+    height: 100vh;
+    padding-top:1rem;
+    z-index:1;
+
+    &__text{
+      padding-top:4rem;
+      padding-bottom: 4rem;
+      text-align: center;
+      margin-top:10rem;
+      width:30%;
+      height: 95vh;
+      background-color: $background-primary;
+      margin-left:10rem;
+      z-index: 3;
+      // box-shadow: 4rem 2rem 0 0 $background-primary;
+      &__infos{
+        color:white;
+        font-family: "eagle";
+        font-size:40px;
+        margin-top:20rem;
+        margin-bottom:20rem;
+        z-index:3;
+        p{
+          color:#252525;
+        }
+
+      }
+
+    }
+    &__text::after{
+      content: "";
+      position:absolute;
+      height:95%;
+      width:30%;
+      top:170%;
+      left:20rem;
+      border: solid  4px $background-primary;;
+      z-index:2;
+    }
+  }
+}
+
+.restaurant{
+  margin-top:10rem;
+  &__intro{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left:5rem;
+    img{
+      box-shadow: -1rem 2rem 0  $background-primary;
+    }
+    &__text{
+      color: $background-primary;
+      font-size: 64px;
+      font-family: "eagle";
+      text-align: center;
+    }
+  }
+  &__seconde{
+    margin-top:5rem;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $background-primary;
+
+    &__text {
+      font-size: 64px;
+      font-family: "eagle";
+      text-align: center;
+      margin-left:5rem;
+    }
+    &__img {
+      margin-right:5rem;
+    }
+  }
+  &__troisieme{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left:5rem;
+    margin-top:5rem;
+    img{
+      box-shadow: 1rem 2rem 0  $background-primary;
+    }
+    &__text{
+      color: $background-primary;
+      font-size: 64px;
+      font-family: "eagle";
+      text-align: center;
+      margin-left:5rem;
+    }
+  }
+}
