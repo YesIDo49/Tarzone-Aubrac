@@ -7,26 +7,24 @@ import Facebook from "../../assets/images/Vector (1).png"
 const Footer = () => {
     return (
         <footer>
-        <div>
-            <img class="footer_img" src={FooterImg} alt=""  />
+            <div class="footer_contact">
+        <h3>Contact</h3>
+      
+        <div class="footer_contact_barre">
+        
+        <div className="footer_contact_barre_text">
+       <div class='footer_contact_barre_numéro'>
+        <p>01 43 33 48 59</p><br /><br />
+        <p>36 bd Pésaro 92000 NANTERRE</p>
+     
         </div>
-        <div class="footer_text">
-            <div class="footer_text_informations">
-                <h3>Nos informations</h3>
-                <p>36 boulevard de Pesaro, 92000</p><br />
-                <p>NANTERRE</p><br />
-                <p>01 40 72 70 00, aubrac@mail.com</p>
-            </div>
-            <div className="footer_text_ouvert">
-                <h3>Ouvert</h3>
-                <p>Lundi au Dimanche: 12h à 14h30 - 19h30 à 23h</p>
-            </div>
-            <div className="footer_text_reseaux">
-                <h3>Suivez nous sur</h3>
-               <a href=""><img src={Instagram} alt=""  /></a>
-               <a href=""><img src={Facebook} alt=""  /></a>
-            </div>
-        </div>
+       <div class="footer_contact_barre_ouverture">
+        <p>Ouvert tous les jours sauf le dimanche de 11h-14h30 et de 17h à 22h</p>
+       </div>
+       </div>
+       </div>
+       </div>
+        
         </footer>
 
 
