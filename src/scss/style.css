@@ -99,7 +99,7 @@ h1 {
   padding: 10% 0;
 }
 .OurProduct .section-title {
-  color: #F7793B;
+  color: #fff;
   font-family: Poppins;
   text-align: center;
   font-size: 3rem;
@@ -220,8 +220,8 @@ h1 {
   font-size: 3rem;
 }
 .Presentation__title h2, .Games__title h2, .Drink__title h2, .RestaurantPresentation__title h2, .Share__title h2, .Specialities__title h2 {
-  color: #F7793B;
-  text-shadow: 1px 0px 4px #fff, 2px 0px 4px #fff, 3px 0px 4px #fff, 2px 0px 3px #252525, 2px 3px 15px #252525, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #252525, 40px 0vw 200px #252525;
+  color: #fff;
+  text-shadow: 1px 0px 4px #F7793B, 2px 0px 4px #F7793B, 3px 0px 4px #F7793B, 2px 0px 3px #F7793B, 2px 3px 15px #F7793B, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #F7793B, 40px 0vw 200px #F7793B;
 }
 .Presentation__image, .Games__image, .Drink__image, .RestaurantPresentation__image, .Share__image, .Specialities__image {
   width: 50%;
@@ -316,8 +316,8 @@ h1 {
   margin: 2rem 0;
 }
 .menu__title h2 {
-  color: #F7793B;
-  text-shadow: 1px 0px 4px #fff, 2px 0px 4px #fff, 3px 0px 4px #fff, 2px 0px 3px #252525, 2px 3px 15px #252525, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #252525, 40px 0vw 200px #252525;
+  color: #fff;
+  text-shadow: 1px 0px 4px #F7793B, 2px 0px 4px #F7793B, 3px 0px 4px #F7793B, 2px 0px 3px #F7793B, 2px 3px 15px #F7793B, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #F7793B, 40px 0vw 200px #F7793B;
 }
 .menu__container {
   height: 100%;
@@ -432,14 +432,18 @@ h1 {
 
 .flicker-long {
   transition: all 0.4s ease;
-  text-shadow: 1px 0px 4px #fff, 2px 0px 4px #fff, 3px 0px 4px #fff, 2px 0px 3px #252525, 2px 3px 15px #252525, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #252525, 40px 0vw 200px #252525;
+  text-shadow: 1px 0px 4px #F7793B, 2px 0px 4px #F7793B, 3px 0px 4px #F7793B, 2px 0px 3px #F7793B, 2px 3px 15px #F7793B, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #F7793B, 40px 0vw 200px #F7793B;
   animation: flicker 4s linear infinite;
 }
 
 .flicker-fast {
   transition: all 0.4s ease;
-  text-shadow: 1px 0px 4px #fff, 2px 0px 4px #fff, 3px 0px 4px #fff, 2px 0px 3px #252525, 2px 3px 15px #252525, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #252525, 40px 0vw 200px #252525;
+  text-shadow: 1px 0px 4px #F7793B, 2px 0px 4px #F7793B, 3px 0px 4px #F7793B, 2px 0px 3px #F7793B, 2px 3px 15px #F7793B, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #F7793B, 40px 0vw 200px #F7793B;
   animation: flicker 1s linear infinite;
+}
+
+.--subtitle-flicker {
+  text-shadow: 1px 0px 4px #fff, 2px 0px 4px #fff, 3px 0px 4px #fff, 2px 0px 3px #252525, 2px 3px 15px #252525, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #252525, 40px 0vw 200px #252525 !important;
 }
 
 @keyframes flicker {

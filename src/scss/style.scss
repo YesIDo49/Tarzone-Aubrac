@@ -33,6 +33,8 @@ h1{
   &.--navbar__subtitle{
     text-shadow: 1px 0px 4px $text-color-tertiary, 2px 0px 4px $text-color-tertiary, 3px 0px 4px $text-color-tertiary, 2px 0px 3px $text-color-primary, 2px 3px 15px $text-color-primary, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px $text-color-primary,40px 0vw 200px $text-color-primary;
   }
+
+
 }
 .header{
   height: 100vh;
@@ -115,7 +117,7 @@ h1{
 .OurProduct{
   padding: 10% 0;
   .section-title{
-    color: $color-primary;
+    color: $text-color-tertiary;
     font-family: Poppins;
     text-align: center;
     font-size: 3rem;
@@ -227,8 +229,8 @@ h1{
     height: 260px;
     font-size: 3rem;
     h2{
-      color: $background-primary;
-      text-shadow: 1px 0px 4px $text-color-tertiary, 2px 0px 4px $text-color-tertiary, 3px 0px 4px $text-color-tertiary, 2px 0px 3px $text-color-primary, 2px 3px 15px $text-color-primary, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px $text-color-primary,40px 0vw 200px $text-color-primary;
+      color: $text-color-tertiary;
+      text-shadow: 1px 0px 4px $color-primary, 2px 0px 4px $color-primary, 3px 0px 4px $color-primary, 2px 0px 3px $color-primary, 2px 3px 15px $color-primary, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px $color-primary,40px 0vw 200px $color-primary;
 
     }
   }
@@ -324,8 +326,8 @@ h1{
     margin: 2rem 0;
 
     h2{
-      color: $color-primary;
-      text-shadow: 1px 0px 4px $text-color-tertiary, 2px 0px 4px $text-color-tertiary, 3px 0px 4px $text-color-tertiary, 2px 0px 3px $text-color-primary, 2px 3px 15px $text-color-primary, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px $text-color-primary,40px 0vw 200px $text-color-primary;
+      color: $text-color-tertiary;
+      text-shadow: 1px 0px 4px $color-primary, 2px 0px 4px $color-primary, 3px 0px 4px $color-primary, 2px 0px 3px $color-primary, 2px 3px 15px $color-primary, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px $color-primary,40px 0vw 200px $color-primary;
     }
   }
 
@@ -472,14 +474,19 @@ h1{
 
 .flicker-long{
   transition: $transition;
-  text-shadow: 1px 0px 4px $text-color-tertiary, 2px 0px 4px $text-color-tertiary, 3px 0px 4px $text-color-tertiary, 2px 0px 3px $text-color-primary, 2px 3px 15px $text-color-primary, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px $text-color-primary,40px 0vw 200px $text-color-primary;
+  text-shadow: 1px 0px 4px $color-primary, 2px 0px 4px $color-primary, 3px 0px 4px $color-primary, 2px 0px 3px $color-primary, 2px 3px 15px $color-primary, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px $color-primary,40px 0vw 200px $color-primary;
   animation: flicker 4s linear infinite;
+
   }
 
 .flicker-fast{
   transition: $transition;
-  text-shadow: 1px 0px 4px $text-color-tertiary, 2px 0px 4px $text-color-tertiary, 3px 0px 4px $text-color-tertiary, 2px 0px 3px $text-color-primary, 2px 3px 15px $text-color-primary, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px $text-color-primary,40px 0vw 200px $text-color-primary;
+  text-shadow: 1px 0px 4px $color-primary, 2px 0px 4px $color-primary, 3px 0px 4px $color-primary, 2px 0px 3px $color-primary, 2px 3px 15px $color-primary, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px $color-primary,40px 0vw 200px $color-primary;
   animation: flicker 1s linear infinite;
+}
+
+.--subtitle-flicker{
+  text-shadow: 1px 0px 4px $text-color-tertiary, 2px 0px 4px $text-color-tertiary, 3px 0px 4px $text-color-tertiary, 2px 0px 3px $text-color-primary, 2px 3px 15px $text-color-primary, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px $text-color-primary,40px 0vw 200px $text-color-primary !important;
 }
 
 @keyframes flicker {

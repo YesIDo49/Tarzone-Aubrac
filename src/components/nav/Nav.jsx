@@ -10,9 +10,9 @@ const Nav = () => {
                 <h1 navbar__h1>AUBRAC CORNER</h1>
                 <h3 className="subtitle --navbar__subtitle">
                     "de
-                    <span className="flicker-long">la bière</span>,
-                    <span className="flicker-fast">la viande</span>
-                    <span className="flicker-long">et des</span>
+                    <span className="flicker-long --subtitle-flicker">la bière</span>,
+                    <span className="flicker-fast --subtitle-flicker">la viande</span>
+                    <span className="flicker-long --subtitle-flicker">et des</span>
                     copains"
                 </h3>
             </div>
